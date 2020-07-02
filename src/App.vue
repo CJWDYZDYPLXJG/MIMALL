@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-01 15:59:39
+ * @LastEditTime: 2020-07-02 08:26:47
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \MIMALL\src\App.vue
+--> 
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
@@ -12,8 +20,14 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data(){
+  return{
+      age:30
+    }
   }
 }
+  
 </script>
 
 <style>
