@@ -1,11 +1,10 @@
 <template>
     <div>
-        index
+        nav-header
     </div>
 </template>
 <script>
-
-export default {
-    name:'index'
+export default{
+    name:'order-header'
 }
 </script>
