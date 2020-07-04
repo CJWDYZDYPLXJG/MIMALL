@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2020-07-01 15:59:39
- * @LastEditTime: 2020-07-02 20:10:53
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \MIMALL\src\App.vue
---> 
 <template>
   <div id="app">
      <router-view></router-view>
@@ -13,7 +5,7 @@
 </template>
 
 <script>
-
+import storage from './storage/index'
 
 export default {
   name: 'App',
@@ -26,7 +18,10 @@ export default {
     }
   },
   mounted(){
-    
+    // storage.setItem('a',2);
+    // storage.setItem('user',{a:1});
+    //  storage.setItem('abc',{a:1},'user');
+     storage.clear('a','user')
   }
 }
   
