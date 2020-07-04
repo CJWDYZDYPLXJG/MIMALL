@@ -1,0 +1,15 @@
+module.exports={
+    devServer:{
+        host:'locahost',
+        port:8080,
+        proxy:{
+            '/api':{
+                tarhet:'https://www.baidu.com',
+                changeOrigin:true,
+                pathRewrite:{
+                    '/api':''
+                }
+            }
+        }
+    }
+}
