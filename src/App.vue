@@ -10,18 +10,19 @@ import storage from './storage/index'
 export default {
   name: 'App',
   components: {
-  
+    
   },
   data(){
   return{
-     
+     res:{}
     }
   },
   mounted(){
-    storage.setItem('a',2);
-    // storage.setItem('user',{a:1});
-    //  storage.setItem('abc',{a:1},'user');
-    //  storage.clear('a','user')
+    // 使用插件mockjs,本地集成
+    this.axios.get('/user/login').then((res)=>{
+      this.res = res;
+    })
+    storage.setItem('0');
   }
 }
   
