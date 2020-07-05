@@ -12,7 +12,7 @@ module.exports = {
         }
       }
     },
-    // publicPath:'/app',
+    // publicPath:'/app', 
     // outputDir:'dist',
     // indexPath:'index2.html',
     // lintOnSave:false,
