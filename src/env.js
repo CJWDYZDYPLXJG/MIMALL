@@ -1,7 +1,7 @@
 let baseURL;
 
-switch (process) {
-    case 'development':
+switch (process.env.NODE_ENV) {
+    case 'dev':
         baseURL = 'http://dev-mall-pre,springboot.cn/api';
         break;
     case 'test':
