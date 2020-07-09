@@ -214,13 +214,40 @@
                             width: 1226px;
                             border-top: 1px solid #e5e5e5;
                             box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.11);
+                            line-height: 12px;
 
                             .product {
                                 float: left;
                                 width: 16.6%;
-                                img{
+                                height: 220px;
+                                font-size: 12px;
+                                text-align: center;
+
+                                a {
+                                    display: inline-block;
+                                }
+
+                                img {
                                     width: auto;
                                     height: 111px;
+                                    margin-top: 26px;
+                                }
+
+                                .pro-img {
+                                    height: 137px;
+                                }
+
+                                .pro-name {
+                                    font-weight: bold;
+                                    margin-top: 19px;
+                                    margin-bottom: 8px;
+                                    color: $colorB;
+                                }
+
+                                .pro-price {
+                                    color: $colorA;
+
+
                                 }
                             }
                         }
