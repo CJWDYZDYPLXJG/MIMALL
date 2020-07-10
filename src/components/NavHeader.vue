@@ -214,7 +214,7 @@
                             width: 1226px;
                             border-top: 1px solid #e5e5e5;
                             box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.11);
-                            line-height: 12px;
+                            
 
                             .product {
                                 float: left;
@@ -222,6 +222,9 @@
                                 height: 220px;
                                 font-size: 12px;
                                 text-align: center;
+                                line-height:12px;
+                                z-index:10;
+                                background-color: #ffffff;
 
                                 a {
                                     display: inline-block;
