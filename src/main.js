@@ -12,7 +12,7 @@ if (mock) {
   require('./mock/api');
 }
 // 根据前端的跨域进行调整
-axios.defaults.baseURL = '/api';
+// axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
 // axios.defaults.baseURL = env.baseURL;
 
