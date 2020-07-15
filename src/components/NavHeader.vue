@@ -30,7 +30,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-1.png">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">小米大机子</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -39,7 +39,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-2.png">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">小米大机子</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -48,7 +48,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-3.png">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">小米大机子</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -57,7 +57,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-4.png">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">小米大机子</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -66,7 +66,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-5.png">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">小米大机子</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -75,7 +75,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-6.png">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">小米大机子</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -93,7 +93,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-3-1.jpg">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">大电视</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -102,7 +102,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-3-1.jpg">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">大电视</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -111,7 +111,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-3-1.jpg">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">大电视</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -120,7 +120,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-3-1.jpg">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">大电视</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -129,7 +129,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-3-1.jpg">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">大电视</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -138,7 +138,7 @@
                                         <div class="pro-img">
                                             <img src="/imgs/nav-img/nav-3-1.jpg">
                                         </div>
-                                        <div class="pro-name"></div>
+                                        <div class="pro-name">大电视</div>
                                         <div class="pro-price">5799元</div>
                                     </a>
                                 </li>
@@ -221,30 +221,30 @@
 <script>
     export default {
         name: 'nav-header',
-        data() {
-            return {
-                username: 'jack',
-                phoneList: []
-            }
-        },
-        mounted(){
-            this.getProdictList();
-        },
-        methods:{
-            getProdictList(){
-                this.axios.get('/products',{
-                    params:{
-                        categoryId:'100012',
-                        // pageSize:6;
-                    }
-                }).then((res)=>{
-                    if(res.list>6){
-                        this.phoneList=res.list.slice(0,6);
-                    }
+        // data() {
+        //     return {
+        //         username: 'jack',
+        //         phoneList: []
+        //     }
+        // },
+        // mounted(){
+        //     this.getProdictList();
+        // },
+        // methods:{
+        //     getProdictList(){
+        //         this.axios.get('/products',{
+        //             params:{
+        //                 categoryId:'100012',
+        //                 // pageSize:6;
+        //             }
+        //         }).then((res)=>{
+        //             if(res.list>6){
+        //                 this.phoneList=res.list.slice(0,6);
+        //             }
 
-                })
-            }
-        }
+        //         })
+        //     }
+        // }
     }
 </script>
 <style lang="scss">
@@ -391,8 +391,6 @@
 
                                 .pro-price {
                                     color: $colorA;
-
-
                                 }
 
                                 &:before {
