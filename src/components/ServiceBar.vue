@@ -36,7 +36,7 @@
                 width: 20px;
                 height: 20px;
                 vertical-align: middle;
-                margin-right:8px;
+                margin-right: 8px;
 
             }
 
